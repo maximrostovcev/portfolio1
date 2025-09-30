@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио школьника — Ростовцев Максим Сергеевич">
+  <meta name="keywords" content="Ростовцев Максим Сергеевич, портфолио школьника, проекты, достижения, школа">
+  <title>Портфолио — Ростовцев Максим Сергеевич</title>
+  <link rel="icon" href="favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(8px);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      color: #2b2b2b;
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #555;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background: rgba(255,255,255,0.95);
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2b2b2b;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff4081;
+    }
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 25px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ff4081;
+      font-size: 1.8rem;
+    }
+    .photo {
+      display: block;
+      max-width: 200px;
+      margin: 0 auto 20px auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    ul li:last-child {
+      border-bottom: none;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.85);
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ростовцев Максим Сергеевич</h1>
+    <p>Портфолио школьника</p>
+  </header>
+
+  <nav>
+    <a href="#about">Обо мне</a>
+    <a href="#resources">Образовательные ресурсы</a>
+    <a href="#achievements">Мои достижения</a>
+    <a href="#projects">Мои проекты</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <section id="about">
+    <h2>Обо мне</h2>
+    <img src="https://via.placeholder.com/200" alt="Моё фото" class="photo">
+    <p>Меня зовут <b>Ростовцев Максим Сергеевич</b>. Я школьник, увлекаюсь новыми технологиями, изучением предметов и творчеством. 
+    Этот сайт — моё личное портфолио, где я собрал достижения, интересные проекты и полезные ресурсы.</p>
+  </section>
+
+  <section id="resources">
+    <h2>Образовательные ресурсы</h2>
+    <ul>
+      <li>Яндекс Учебник</li>
+      <li>Решу ЕГЭ / ОГЭ</li>
+      <li>Coursera</li>
+      <li>Khan Academy</li>
+      <li>Stepik</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Мои достижения</h2>
+    <ul>
+      <li>Призёр школьной олимпиады по математике</li>
+      <li>Участник конкурса исследовательских проектов</li>
+      <li>Грамота за спортивные достижения</li>
+      <li>Диплом за участие в творческом конкурсе</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Мои проекты</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Научное исследование</h3>
+        <p>Работа по экологии, выполненная в рамках школьного конкурса.</p>
+      </div>
+      <div class="project-card">
+        <h3>Мини-сайт</h3>
+        <p>Создан первый сайт-портфолио с помощью HTML и CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Творческий проект</h3>
+        <p>Презентация о любимом писателе для школьного конкурса.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <h2>Контакты</h2>
+    <p>Вы можете связаться со мной по электронной почте:  
+    <a href="mailto:example@mail.ru">example@mail.ru</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ростовцев Максим Сергеевич | Портфолио школьника</p>
+  </footer>
+
+</body>
+</html>
